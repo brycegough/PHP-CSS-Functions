@@ -4,20 +4,22 @@ Apply user defined functions to a block of CSS code
 
 ## Example
 
-#### PHP
-```PHP
-include(__DIR__ . '/CSSFunctions.php');
-
-$css = "
+#### Input
+```CSS
 .some-param {
     margin: @@my_function();
 }
 
 @media(max-width: @@my_function(4)) {
     @@another_function(123, 456)
-}";
+}
+```
 
-$compiler = new CSSFunctions( $css, [
+#### PHP
+```PHP
+include(__DIR__ . '/CSSFunctions.php');
+
+$compiler = new CSSFunctions( $input, [
 
     'my_function' => function($args) {
         return ( $args[0] ?? '0' ) . 'px';
