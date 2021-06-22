@@ -35,7 +35,7 @@ echo '<pre>' . $compiler->compile() . '</pre>';
 ```
 
 
-### Output
+#### Output
 
 ```css
 .some-param {
