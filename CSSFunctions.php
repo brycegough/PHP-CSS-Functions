@@ -40,7 +40,7 @@ class CSSFunctions {
         $fn = strtolower( $match[1] );
 
         if ( is_callable( $this->functions[ $fn ] ?? false ) ) {
-            $args = preg_split('/(?<!\\\\),/', $match[2]);
+            $args = ! empty( $match[2] ) ? preg_split('/(?<!\\\\),/', $match[2]) : [];
             foreach ($args as &$arg) $arg = trim($arg);
             return $this->functions[ $fn ]( $args );
         }
