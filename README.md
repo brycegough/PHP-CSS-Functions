@@ -1,5 +1,5 @@
 # PHP-CSS-Functions
-Apply user defined functions to a block of CSS code
+Apply user defined functions to a block of CSS code - or any string for that matter..
 
 
 ## Example
