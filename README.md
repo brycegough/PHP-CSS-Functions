@@ -1,4 +1,5 @@
-# PHP-CSS-Functions
+# CSS Functions
+### Standalone PHP Class
 Apply user defined functions to a block of CSS code - or any string for that matter..
 
 
